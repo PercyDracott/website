@@ -107,12 +107,8 @@ nav.visible {
   width: 6px; height: 6px;
   border-radius: 50%;
   background: var(--yellow);
-  animation: pulse 1s infinite;
 }
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0.5; }
-}
+
 
 /* ── SECTIONS — two-column split ───────────────────
    Left column: your name + nav. Right: content.
@@ -157,6 +153,8 @@ section {
   margin-bottom: 2rem;
 }
 
+.accent { color: var(--yellow); }
+
 .nav-links-underName {
   flex-direction: column;
   gap: 0.6rem;
@@ -165,7 +163,7 @@ section {
 }
 .nav-links-underName a {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 1rem;
   letter-spacing: 0.12em;
   text-decoration: none;
   color: var(--muted);
@@ -174,20 +172,8 @@ section {
 .nav-links-underName a:hover { color: var(--yellow); }
 
 .hero-cta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
-.btn {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  text-decoration: none;
-  padding: 0.65rem 1.4rem;
-  border: 1px solid;
-  transition: all 0.15s;
-  display: inline-block;
-}
-.btn-yellow { background: var(--yellow); color: var(--bg); border-color: var(--yellow); }
-.btn-yellow:hover { background: transparent; color: var(--yellow); }
-.btn-ghost { background: transparent; color: var(--white); border-color: var(--border); }
-.btn-ghost:hover { border-color: var(--white); }
+
+
 
 /* ── BLANK SECTION PLACEHOLDER ─────────────────────
    The empty second section. Style as needed.        */
